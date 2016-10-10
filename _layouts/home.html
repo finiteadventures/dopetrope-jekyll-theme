@@ -1,4 +1,22 @@
-{% include header.html %}
-	{{ content }}
+---
+layout: default
+bodyClass: homepage
+---
+
+<!-- Header -->
+
+<div id="header-wrapper">
+  <div id="header">
+
+    {% include nav.html %}
+
+    {% include banner.html %}
+
+    {% include intro.html %}
+
+  </div>
+</div>
+
+  {{ content }}
+
 {% include blog.html %}
-{% include footer.html %}
